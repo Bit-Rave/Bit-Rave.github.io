@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Canard Thouny Q&A</title>
+</head>
+<body>
+  <div class="container">
+    <img src="img/duck.png" alt="Canard Thouny en PNG" class="duck-image" id="thouny">
+    <div class="question-box">
+      <label for="question">Posez votre question à Thouny :</label>
+      <textarea id="question" placeholder="Une Question ?"></textarea>
+      <button onclick="poserQuestion()">Poser la question</button>
+      <p id="reponse" class="reponse"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
