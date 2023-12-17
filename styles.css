@@ -6,8 +6,8 @@ body {
   height: 100vh;
   margin: 0;
   background: linear-gradient(to bottom, #00bcd4, #2196f3);
-  overflow: hidden; /* Pour masquer la barre de défilement */
-  cursor: url('img/curseur.png'), auto; /* Remplacez 'path/to/your/yellow-dot.png' par le chemin de votre image */
+  overflow: hidden; 
+  cursor: url('img/curseur.png'), auto; 
 }
 
 .container {
@@ -80,7 +80,7 @@ button:hover {
   color: #333;
 }
 
-/* Media Queries pour la responsive design */
+
 @media screen and (max-width: 800px) {
   .question-box {
     max-width: 90%;

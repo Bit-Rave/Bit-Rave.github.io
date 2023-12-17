@@ -1,15 +1,10 @@
-// Fonction pour générer une réponse aléatoire lors du chargement de la page
 function genererReponseAleatoire() {
 
   const randomReponse = reponses[Math.floor(Math.random() * reponses.length)];
   const reponseContainer = document.getElementById('reponse');
   reponseContainer.textContent = `Le Canard en Plastique dit : "${randomReponse}"`;
 }
-
-// Appeler la fonction lors du chargement de la page
 window.onload = genererReponseAleatoire;
-
-// Fonction pour poser une question et obtenir une réponse aléatoire
 function poserQuestion() {
   const questionInput = document.getElementById('question');
   const reponseContainer = document.getElementById('reponse');
@@ -120,17 +115,10 @@ function poserQuestion() {
   } else {
     reponseContainer.textContent = "Veuillez poser une question valide.";
   }
-
-  // Effacer la question après avoir répondu
   questionInput.value = '';
 }
-
-// Gestionnaire d'événements pour la touche "Enter"
 document.getElementById('question').addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
     poserQuestion();
   }
 });
-
-
-
