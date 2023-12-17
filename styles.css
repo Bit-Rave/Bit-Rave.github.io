@@ -1,11 +1,13 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(to bottom, #87CEEB, #3498db); /* Dégradé de couleur */
+  background: linear-gradient(to bottom, #00bcd4, #2196f3);
+  overflow: hidden; /* Pour masquer la barre de défilement */
+  cursor: url('img/curseur.png'), auto; /* Remplacez 'path/to/your/yellow-dot.png' par le chemin de votre image */
 }
 
 .container {
@@ -16,7 +18,7 @@ body {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -26,44 +28,44 @@ body {
 
 .question-box {
   background-color: #FFF;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-in-out;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 .question-box:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 label {
-  font-size: 18px;
+  font-size: 20px;
   display: block;
-  margin-bottom: 10px;
-  color: #333; /* Couleur du texte */
+  margin-bottom: 15px;
+  color: #333;
 }
 
 textarea {
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 15px;
   width: 100%;
   box-sizing: border-box;
   resize: vertical;
-  border: 1px solid #ccc; /* Bordure légère */
-  border-radius: 5px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
 }
 
 button {
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: url('img/curseur.png'), auto;;
   background-color: #4CAF50;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -73,13 +75,27 @@ button:hover {
 
 .reponse {
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 30px;
+  font-size: 20px;
   color: #333;
 }
 
-/* Media Query pour rendre le site responsive */
-@media screen and (max-width: 600px) {
+/* Media Queries pour la responsive design */
+@media screen and (max-width: 800px) {
   .question-box {
-    max-width: 100%;
+    max-width: 90%;
+  }
+
+  textarea {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .reponse {
+    font-size: 18px;
   }
 }
