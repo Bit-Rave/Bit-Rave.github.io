@@ -2,7 +2,7 @@
 
 ## Description
 
-Bienvenue dans le référentiel GitHub du groupe d'étudiants XYZ. Découvrez nos projets passionnants en informatique, créés dans le cadre de notre première année de baccalauréat.
+Bienvenue dans le référentiel GitHub du groupe d'étudiants en B1C. Découvrez nos projets passionnants en informatique, créés dans le cadre de notre première année de baccalauréat.
 
 ## À Propos de Nous
 
@@ -10,17 +10,11 @@ Nous sommes un groupe d'étudiants enthousiastes en première année de baccalau
 
 ## Projets Principaux
 
-1. **Campus Connect**
-   - Description : Une application web pour faciliter la communication et la collaboration entre les étudiants sur le campus.
-   - [Lien vers Campus Connect]
+1. **Morpion en C**
+   - Description : une application console en C qui reproduis un morpion en 3x3.
+   - [lien de notre repository (https://github.com/Bit-Rave/morpion-c)]
 
-2. **CodeLab Learning Platform**
-   - Description : Une plateforme d'apprentissage en ligne interactive pour les étudiants en informatique.
-   - [Lien vers CodeLab Learning]
 
-3. **GameHub**
-   - Description : Une collection de petits jeux développés dans le cadre de notre apprentissage en programmation.
-   - [Lien vers GameHub]
 
 ## Comment Contribuer
 
@@ -28,12 +22,9 @@ Nous sommes ouverts aux contributions ! Si vous êtes également étudiant en in
 
 ## Contact
 
-Pour toute question ou pour en savoir plus sur nos projets, n'hésitez pas à nous contacter par e-mail à l'adresse : groupexyz@gmail.com.
+nous somme disponible sur instagram et sur tous les autre réseaux
 
 ## Licence
 
 Ce projet est sous licence MIT. Consultez le fichier `LICENSE` pour plus de détails.
 
----
-
-**Note :** Les informations fournies ici sont fictives et adaptées à un groupe d'étudiants en première année de baccalauréat. N'oubliez pas de personnaliser ces informations avec les détails réels de votre groupe, de vos projets et de vos coordonnées.
