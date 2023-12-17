@@ -28,3 +28,7 @@ nous somme disponible sur instagram et sur tous les autre réseaux
 
 Ce projet est sous licence MIT. Consultez le fichier `LICENSE` pour plus de détails.
 
+---
+layout: forward
+target: ./index.html
+---
