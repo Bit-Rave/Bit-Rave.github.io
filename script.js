@@ -11,7 +11,7 @@ function poserQuestion() {
   const reponses = [
     "Oui, certainement !",
     "Non, pas du tout.",
-    "C'est probable.",
+    "Ah non pas correct ca",
     "Il est difficile de dire pour le moment.",
     "Absolument.",
     "Non, désolé.",
