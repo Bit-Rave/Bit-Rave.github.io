@@ -4,39 +4,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <title>BitRave Code Playground</title>
   <link rel="stylesheet" href="https://codemirror.net/lib/codemirror.css">
+  <link rel="stylesheet" href="https://codemirror.net/theme/dracula.css">
+</head>
+
+<body>
+  <!-- Menu Traditionnel -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">BitRave</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Canard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projet</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Section HTML -->
+      <div class="col-md-6">
+        <h2>HTML</h2>
+        <div class="code-section">
+          <textarea id="html-code" placeholder="Écrivez votre code HTML ici..."></textarea>
+        </div>
+      </div>
+
+      <!-- Section CSS -->
+      <div class="col-md-6">
+        <h2>CSS</h2>
+        <div class="code-section">
+          <textarea id="css-code" placeholder="Écrivez votre code CSS ici..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <button class="btn btn-primary" onclick="updatePreview()">Voir l'aperçu</button>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <div id="preview">
+          <h2>Aperçu</h2>
+          <iframe id="preview-frame" width="100%" height="400"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://codemirror.net/lib/codemirror.js"></script>
   <script src="https://codemirror.net/mode/htmlmixed/htmlmixed.js"></script>
   <script src="https://codemirror.net/mode/css/css.js"></script>
   <script src="https://codemirror.net/addon/edit/matchbrackets.js"></script>
   <script src="https://codemirror.net/theme/dracula.js"></script>
   <script src="script.js"></script>
-</head>
 
-<body>
-  <nav class="spherical-menu">
-    <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/canard/canard.html">Canard</a></li>
-      <li><a href="#">Projet</a></li>
-      <li><a href="#">Élément 1</a></li>
-      <li><a href="#">Élément 2</a></li>
-      <li><a href="#">Élément 3</a></li>
-    </ul>
-  </nav>
-
-  <div id="code-editor">
-    <textarea id="html-code" placeholder="Écrivez votre code HTML ici..."></textarea>
-    <textarea id="css-code" placeholder="Écrivez votre code CSS ici..."></textarea>
-  </div>
-
-  <div id="preview">
-    <iframe id="preview-frame" width="100%" height="400"></iframe>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
