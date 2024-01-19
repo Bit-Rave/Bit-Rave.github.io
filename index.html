@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>BitRave</title>
+  <title>BitRave Code Playground</title>
+  <link rel="stylesheet" href="https://codemirror.net/lib/codemirror.css">
+  <script src="https://codemirror.net/lib/codemirror.js"></script>
+  <script src="https://codemirror.net/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="https://codemirror.net/mode/css/css.js"></script>
 </head>
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="canard/canard.html"></a>Canard</li>
-    <li><a href=""></a>projet</li>
-  </ul>
-</nav>
-</html>
+
+<body>
+  <nav class="spherical-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="canard/canard.html">Canard</a></li>
+      <li><a href="#">Projet</a></li>
+      <li><a href="#">Élément 1</a></li>
+      <li><a href="#">Élément 2</a></li>
+      <li><a href="#">Élément 3</a></li>
+    </ul>
+  </nav>
+
+  <div id="code-editor">
+    <textarea id="html-code">
+      <h1>Bienvenue dans BitRave</h1>
+      <p>Modifiez le code ci-dessus pour voir les changements en direct.</p>
+    </textarea>
+    <textarea id="css-code">
+      /* Écrivez ici votre code CSS */
+      body {
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        color: #333;
+      }
+    </textarea>
+  </div>
+  <script src="script.js"></script>
+  <iframe id="preview" width="100%" height="400"></iframe>
+</body>
+  </html>
