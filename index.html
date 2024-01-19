@@ -10,13 +10,16 @@
   <script src="https://codemirror.net/lib/codemirror.js"></script>
   <script src="https://codemirror.net/mode/htmlmixed/htmlmixed.js"></script>
   <script src="https://codemirror.net/mode/css/css.js"></script>
+  <script src="https://codemirror.net/addon/edit/matchbrackets.js"></script>
+  <script src="https://codemirror.net/theme/dracula.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
   <nav class="spherical-menu">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="canard/canard.html">Canard</a></li>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/canard/canard.html">Canard</a></li>
       <li><a href="#">Projet</a></li>
       <li><a href="#">Élément 1</a></li>
       <li><a href="#">Élément 2</a></li>
@@ -25,22 +28,15 @@
   </nav>
 
   <div id="code-editor">
-    <textarea id="html-code">
-      <h1>Bienvenue dans BitRave</h1>
-      <p>Modifiez le code ci-dessus pour voir les changements en direct.</p>
-    </textarea>
-    <textarea id="css-code">
-      /* Écrivez ici votre code CSS */
-      body {
-        background-color: #f0f0f0;
-      }
-
-      h1 {
-        color: #333;
-      }
-    </textarea>
+    <textarea id="html-code" placeholder="Écrivez votre code HTML ici..."></textarea>
+    <textarea id="css-code" placeholder="Écrivez votre code CSS ici..."></textarea>
   </div>
+
+  <div id="preview">
+    <iframe id="preview-frame" width="100%" height="400"></iframe>
+  </div>
+
   <script src="script.js"></script>
-  <iframe id="preview" width="100%" height="400"></iframe>
 </body>
-  </html>
+
+</html>
