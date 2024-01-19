@@ -9,12 +9,69 @@
   <link rel="stylesheet" href="https://codemirror.net/theme/dracula.css">
   <link rel="stylesheet" href="styles.css">
   <title>BitRave Code Playground</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fcfcfc; /* Couleur de fond claire */
+    }
+
+    .container-fluid {
+      padding: 20px;
+      background-color: #fff; /* Couleur de fond pour la zone de contenu */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px; /* Coins arrondis */
+    }
+
+    h2 {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      margin-bottom: 0;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    textarea {
+      width: 100%;
+      height: calc(100vh - 120px);
+      border: 1px solid #ddd;
+      border-top: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: #f8f8f8; /* Couleur de fond pour les zones de texte */
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    #preview {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #preview-frame {
+      border: 1px solid #ddd;
+      border-radius: 10px; /* Coins arrondis */
+    }
+  </style>
 </head>
 
 <body>
   <!-- Menu Traditionnel -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">BitRave</a>
+    <a class="navbar-brand" href="#" style="color: #007bff; font-weight: bold;">BitRave</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -22,13 +79,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Accueil</a>
+          <a class="nav-link" href="#" style="color: #007bff;">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Canard</a>
+          <a class="nav-link" href="#" style="color: #007bff;">Canard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projet</a>
+          <a class="nav-link" href="#" style="color: #007bff;">Projet</a>
         </li>
       </ul>
     </div>

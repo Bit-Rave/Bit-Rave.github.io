@@ -17,6 +17,12 @@ function updatePreview() {
   var previewFrame = document.getElementById("preview-frame");
   var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
   preview.open();
-  preview.write(htmlEditor.getValue() + '<style>' + cssEditor.getValue() + '</style>');
+  preview.write(
+    '<html><head><style>' +
+      cssEditor.getValue() +
+      '</style></head><body>' +
+      htmlEditor.getValue() +
+      '</body></html>'
+  );
   preview.close();
 }
