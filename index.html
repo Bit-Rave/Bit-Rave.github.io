@@ -1,75 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://codemirror.net/lib/codemirror.css">
-  <link rel="stylesheet" href="https://codemirror.net/theme/dracula.css">
   <link rel="stylesheet" href="styles.css">
-  <title>BitRave Code Playground</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #fcfcfc; /* Couleur de fond claire */
-    }
-
-    .container-fluid {
-      padding: 20px;
-      background-color: #fff; /* Couleur de fond pour la zone de contenu */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 10px; /* Coins arrondis */
-    }
-
-    h2 {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px;
-      margin-bottom: 0;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-    }
-
-    textarea {
-      width: 100%;
-      height: calc(100vh - 120px);
-      border: 1px solid #ddd;
-      border-top: none;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      background-color: #f8f8f8; /* Couleur de fond pour les zones de texte */
-    }
-
-    .btn-primary {
-      background-color: #007bff;
-      border-color: #007bff;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 18px;
-    }
-
-    .btn-primary:hover {
-      background-color: #0056b3;
-      border-color: #0056b3;
-    }
-
-    #preview {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    #preview-frame {
-      border: 1px solid #ddd;
-      border-radius: 10px; /* Coins arrondis */
-    }
-  </style>
+  <title>BitRave</title>
 </head>
 
 <body>
-  <!-- Menu Traditionnel -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#" style="color: #007bff; font-weight: bold;">BitRave</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -90,50 +28,16 @@
       </ul>
     </div>
   </nav>
-
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Section HTML -->
-      <div class="col-md-6">
-        <h2>HTML</h2>
-        <div class="code-section">
-          <textarea id="html-code" placeholder="Écrivez votre code HTML ici..."></textarea>
-        </div>
-      </div>
-
-      <!-- Section CSS -->
-      <div class="col-md-6">
-        <h2>CSS</h2>
-        <div class="code-section">
-          <textarea id="css-code" placeholder="Écrivez votre code CSS ici..."></textarea>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mt-3">
-      <div class="col-md-12">
-        <button class="btn btn-primary" onclick="updatePreview()">Voir l'aperçu</button>
-      </div>
-    </div>
-
-    <div class="row mt-3">
-      <div class="col-md-12">
-        <div id="preview">
-          <h2>Aperçu</h2>
-          <iframe id="preview-frame" width="100%" height="400"></iframe>
-        </div>
-      </div>
+  <div class="container">
+    <img src="img/duck.png" alt="Canard Thouny" class="duck-image" id="thouny">
+    <div class="question-box">
+      <label for="question">Posez votre question à votre Canard :</label>
+      <input type = "texte" id="question" placeholder="Une Question ?" size="18">
+      <button onclick="poserQuestion()">Poser la question</button>
+      <p id="reponse" class="reponse"></p>
     </div>
   </div>
-
-  <script src="https://codemirror.net/lib/codemirror.js"></script>
-  <script src="https://codemirror.net/mode/htmlmixed/htmlmixed.js"></script>
-  <script src="https://codemirror.net/mode/css/css.js"></script>
-  <script src="https://codemirror.net/addon/edit/matchbrackets.js"></script>
-  <script src="https://codemirror.net/theme/dracula.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ 
   <script src="script.js"></script>
 </body>
 

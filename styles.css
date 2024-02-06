@@ -1,55 +1,101 @@
 body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #fcfcfc; /* Couleur de fond claire */
+  background: linear-gradient(to bottom, #00bcd4, #2196f3);
+  overflow: hidden; 
+  cursor: url('img/curseur.png'), auto; 
 }
 
-.container-fluid {
-  padding: 20px;
-  background-color: #fff; /* Couleur de fond pour la zone de contenu */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; /* Coins arrondis */
+.container {
+  text-align: center;
 }
 
-h2 {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px;
-  margin-bottom: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+#thouny {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#thouny:hover {
+  transform: scale(1.1);
+}
+
+.question-box {
+  background-color: #FFF;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.question-box:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 textarea {
-  width: 100%;
-  height: calc(100vh - 120px);
-  border: 1px solid #ddd;
-  border-top: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: #f8f8f8; /* Couleur de fond pour les zones de texte */
-}
-
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px;
   font-size: 18px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
 }
 
-.btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: url('img/curseur.png'), auto;;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-#preview {
-  text-align: center;
-  margin-top: 20px;
+button:hover {
+  background-color: #45a049;
 }
 
-#preview-frame {
-  border: 1px solid #ddd;
-  border-radius: 10px; /* Coins arrondis */
+.reponse {
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #333;
+}
+
+
+@media screen and (max-width: 800px) {
+  .question-box {
+    max-width: 90%;
+  }
+
+  textarea {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .reponse {
+    font-size: 18px;
+  }
 }
